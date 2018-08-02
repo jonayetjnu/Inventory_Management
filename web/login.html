@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login page</title>
+  
+      <style type="text/css">
+        body {
+            background-color: #CCC;
+            margin:80px 80px 100px 100px;
+            width: fit-content;
+
+        }
+        div#fixedheader {
+            position:fixed;
+            top:0px;
+            left:0px;
+            width:100%;
+            height:8%;
+            color:#CCC;
+            background:#333;
+            padding:20px;
+        }
+        div#fixedfooter {
+            position:fixed;
+            bottom:0px;
+            left:0px;
+            width:100%;
+            color:#CCC;
+            background:#333;
+            padding:8px;
+        }
+    </style>
+      </head>
+    <body style="background-color: mediumaquamarine">
+        
+
+<!--        <p style="color: green">New in here! Please <a href="reg.html">register  here</a> to login and browse.</p>-->
+      
+      <form name="loginForm" method="post" action="index.html">
+<table width="50%" bgcolor="0099CC" align="center">
+
+<tr>
+<td colspan=2><center><font size=4><b>Login Page</b></font></center></td>
+</tr>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><input type="Reset"></td>
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "jonayet" && form.pwd.value == "123")
+{
+    
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+    </body>
+</html>
+
